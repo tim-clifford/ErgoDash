@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:ergodash-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -931,7 +930,7 @@ $EndComp
 Text Label 3050 3350 0    60   ~ 0
 rst
 $Comp
-L switches:SW_Push SW29
+L Switch:SW_Push SW29
 U 1 1 5A2C65E7
 P 2600 750
 F 0 "SW29" H 2650 850 50  0000 L CNN
@@ -1091,7 +1090,7 @@ row4
 Text Label 800  4250 0    60   ~ 0
 row4
 $Comp
-L conn:Conn_01x03 J2
+L Connector_Generic:Conn_01x03 J2
 U 1 1 5AE6C71E
 P 1250 1500
 F 0 "J2" H 1250 1700 50  0000 C CNN
@@ -1102,7 +1101,7 @@ F 3 "" H 1250 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:Conn_01x03 J3
+L Connector_Generic:Conn_01x03 J3
 U 1 1 5AE6C865
 P 1250 2350
 F 0 "J3" H 1250 2550 50  0000 C CNN
@@ -1234,7 +1233,7 @@ RBG
 Text Label 800  4900 0    60   ~ 0
 RX
 $Comp
-L switches:SW_Push SW37
+L Switch:SW_Push SW37
 U 1 1 5B031444
 P 1200 750
 F 0 "SW37" H 1250 850 50  0000 L CNN
@@ -1420,27 +1419,27 @@ xtradata
 $Comp
 L power:VCC #PWR023
 U 1 1 5B07A324
-P 4250 4450
-F 0 "#PWR023" H 4250 4300 50  0001 C CNN
-F 1 "VCC" H 4250 4600 50  0000 C CNN
-F 2 "" H 4250 4450 50  0001 C CNN
-F 3 "" H 4250 4450 50  0001 C CNN
-	1    4250 4450
+P 4250 4350
+F 0 "#PWR023" H 4250 4200 50  0001 C CNN
+F 1 "VCC" H 4250 4500 50  0000 C CNN
+F 2 "" H 4250 4350 50  0001 C CNN
+F 3 "" H 4250 4350 50  0001 C CNN
+	1    4250 4350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR024
 U 1 1 5B07A87D
-P 4250 5150
-F 0 "#PWR024" H 4250 4900 50  0001 C CNN
-F 1 "GND" H 4250 5000 50  0000 C CNN
-F 2 "" H 4250 5150 50  0001 C CNN
-F 3 "" H 4250 5150 50  0001 C CNN
-	1    4250 5150
+P 4250 5250
+F 0 "#PWR024" H 4250 5000 50  0001 C CNN
+F 1 "GND" H 4250 5100 50  0000 C CNN
+F 2 "" H 4250 5250 50  0001 C CNN
+F 3 "" H 4250 5250 50  0001 C CNN
+	1    4250 5250
 	1    0    0    -1  
 $EndComp
 $Comp
-L conn:GS3 J4
+L Jumper:SolderJumper_3_Open J4
 U 1 1 5B07BF43
 P 4650 4550
 F 0 "J4" H 4700 4750 50  0000 C CNN
@@ -1448,10 +1447,10 @@ F 1 "GS3" H 4700 4351 50  0000 C CNN
 F 2 "library:jumper2" V 4738 4476 50  0001 C CNN
 F 3 "" H 4650 4550 50  0001 C CNN
 	1    4650 4550
-	1    0    0    -1  
+	0    -1   1    0   
 $EndComp
 $Comp
-L conn:GS3 J5
+L Jumper:SolderJumper_3_Open J5
 U 1 1 5B07C5A4
 P 4650 5050
 F 0 "J5" H 4700 5250 50  0000 C CNN
@@ -1459,7 +1458,7 @@ F 1 "GS3" H 4700 4851 50  0000 C CNN
 F 2 "library:jumper2" V 4738 4976 50  0001 C CNN
 F 3 "" H 4650 5050 50  0001 C CNN
 	1    4650 5050
-	1    0    0    -1  
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:LED D35
@@ -1484,7 +1483,7 @@ F 3 "" H 11600 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L transistors:BSS138 Q1
+L Transistor_FET:BSS138 Q1
 U 1 1 5B181158
 P 11550 1150
 F 0 "Q1" H 11750 1225 50  0000 L CNN
@@ -2802,24 +2801,7 @@ Wire Wire Line
 	10150 5950 10150 5050
 Connection ~ 9350 5950
 Connection ~ 9350 5050
-Wire Wire Line
-	4250 4450 4500 4450
-Wire Wire Line
-	4500 4950 4250 4950
-Wire Wire Line
-	4250 4950 4250 4450
-Wire Wire Line
-	4250 5150 4400 5150
-Wire Wire Line
-	4500 4650 4400 4650
-Wire Wire Line
-	4400 4650 4400 5150
-Connection ~ 4400 5150
-Wire Wire Line
-	4800 4550 5100 4550
 Connection ~ 5100 4550
-Wire Wire Line
-	4800 5050 5050 5050
 Wire Wire Line
 	5050 5050 5050 5950
 Connection ~ 6100 5950
@@ -3374,8 +3356,6 @@ Wire Wire Line
 Wire Wire Line
 	9350 5050 10150 5050
 Wire Wire Line
-	4400 5150 4500 5150
-Wire Wire Line
 	5100 4550 5100 5250
 Wire Wire Line
 	6100 5950 6750 5950
@@ -3494,4 +3474,24 @@ F 3 "" H 4000 3050 50  0001 C CNN
 	1    4000 3050
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	4800 4550 5100 4550
+Wire Wire Line
+	4800 5050 5050 5050
+Wire Wire Line
+	4250 4850 4650 4850
+Connection ~ 4250 4350
+Wire Wire Line
+	4250 4350 4650 4350
+Wire Wire Line
+	4400 5250 4650 5250
+Wire Wire Line
+	4250 5250 4400 5250
+Connection ~ 4400 5250
+Wire Wire Line
+	4400 4750 4650 4750
+Wire Wire Line
+	4400 4750 4400 5250
+Wire Wire Line
+	4250 4350 4250 4850
 $EndSCHEMATC
