@@ -1,0 +1,10 @@
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_prl
+*~
+*.FCStd1
+_autosave-*
+fp-info-cache
+ergodash-backups

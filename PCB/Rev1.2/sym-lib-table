@@ -1,5 +1,0 @@
-(sym_lib_table
-  (lib (name ergodash)(type Legacy)(uri ${KIPRJMOD}/library/ergodash.lib)(options "")(descr ""))
-  (lib (name ws2812b)(type Legacy)(uri ${KIPRJMOD}/library/ws2812b.lib)(options "")(descr ""))
-  (lib (name promicro)(type Legacy)(uri ${KIPRJMOD}/library/promicro.lib)(options "")(descr ""))
-)

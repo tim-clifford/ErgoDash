@@ -1,3 +1,0 @@
-# ErgoDash
-
-Preparation

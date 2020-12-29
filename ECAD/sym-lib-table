@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name "ergodash")(type "KiCad")(uri "${KIPRJMOD}/library/ergodash.kicad_sym")(options "")(descr ""))
+  (lib (name "ws2812b")(type "KiCad")(uri "${KIPRJMOD}/library/ws2812b.kicad_sym")(options "")(descr ""))
+  (lib (name "promicro")(type "KiCad")(uri "${KIPRJMOD}/library/promicro.kicad_sym")(options "")(descr ""))
+)
